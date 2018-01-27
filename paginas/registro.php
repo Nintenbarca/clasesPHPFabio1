@@ -9,18 +9,6 @@
 
 <?php
 session_start();
-
-if (!empty($_SESSION['errores'])) {
-	echo "<ul>";
-	while (!empty($_SESSION['errores'])) {
-		echo "<li>". array_pop($_SESSION['errores']) ."</li>";
-	}
-	echo "</ul>";
-}	
-?>
-
-<form action="../acciones/usuarios/registrar.php" method="post">
-	<p><label for="nombre">Nombre: </label>
 	<input type="text" name="nombre"></p>
 
 	<p><label for="apellidos">Apellidos: </label>
